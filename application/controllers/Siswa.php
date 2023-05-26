@@ -67,6 +67,7 @@ class Siswa extends CI_Controller {
         $nilai_akhir_huruf = konversiNilai($nilai_akhir_angka);
     
         // Mendapatkan tanggal dan jam saat ini
+        date_default_timezone_set("Asia/Makassar");
         $tanggal_jam_simpan = date('d-m-Y H:i:s');
         
         // Membaca file menjadi array
@@ -131,6 +132,7 @@ class Siswa extends CI_Controller {
         $nilai_akhir_huruf = konversiNilai($nilai_akhir_angka);
     
         // Mendapatkan tanggal dan jam saat ini
+        date_default_timezone_set("Asia/Makassar");
         $tanggal_jam_tambah = date('d-m-Y H:i:s');
     
         // Menambahkan data siswa ke file CSV
